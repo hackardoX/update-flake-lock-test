@@ -18,3 +18,7 @@ jobs:
         uses: DeterminateSystems/flake-checker-action@main
       - name: Update flake.lock
         uses: andrea11/update-flake-lock@feat/signoff
+        with:
+          nix-options: '--debug --log-format raw'
+          commit-msg: "hi there"
+          signoff: true
