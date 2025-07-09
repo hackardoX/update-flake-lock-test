@@ -2,7 +2,9 @@
   description = "test";
 
   inputs = {
-    nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.533189.tar.gz";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    test.url = "github:nixos/nix";
+    test2.url = "github:nixos/patchelf";
   };
 
   outputs =
