@@ -19,6 +19,7 @@ jobs:
       - name: Update flake.lock
         uses: andrea11/update-flake-lock@feat/signoff
         with:
+          inputs: 'test2'
           nix-options: '--debug --log-format raw'
           commit-msg: "hi there"
           signoff: true
